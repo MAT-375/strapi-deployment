@@ -20,11 +20,11 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
-    },
-    "Desc": {
-      "type": "text"
     },
     "price": {
       "type": "decimal"
@@ -34,6 +34,9 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "desc": {
+      "type": "richtext"
     }
   }
 }
